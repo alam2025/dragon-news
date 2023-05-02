@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.my-container{
+      @apply md:w-[90%] mx-auto mt-10
+}
+.rightNav{
+      background-image:  url('./assets/bg1.png');
+      background-repeat: no-repeat;
+      background-size:100%
+}
