@@ -49,7 +49,7 @@ const router= createBrowserRouter([
                   {
                         path:':id',
                         element: <Category/>,
-                        loader: ({params})=>fetch(`http://localhost:3000/category/${params.id}`)
+                        loader: ({params})=>fetch(`https://dragans-news-server-alam2025.vercel.app/category/${params.id}`)
                   },
                  
                  
@@ -62,7 +62,7 @@ const router= createBrowserRouter([
                   {
                         path:':id',
                         element: <PrivateRoute><News/></PrivateRoute>,
-                        loader : ({params})=>fetch(`http://localhost:3000/news/${params.id}`)
+                        loader : ({params})=>fetch(`https://dragans-news-server-alam2025.vercel.app/news/${params.id}`)
                   }
             ]
 
